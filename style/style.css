@@ -7,6 +7,10 @@ head {
     src: url(../font/Streamster.ttf);
 }
 
+#indice {
+    text-indent: 1.5em;
+}
+
 body {
     background-image: url("../img/cielo4.jpg");
     background-repeat: no-repeat;
@@ -27,22 +31,52 @@ div {
     background-color: white;
 }
 
+#quiensoy {
+    text-indent: 1.5em;
+    padding: 120px;
+    letter-spacing: 0.2em;
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
-    color: rgb(194, 0, 0);
+    color: #E0EFF1;
     font-weight: bold;
     /*text-shadow: 0.1em 0.1em black;*/
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 }
 
 a:hover {
-    color: rgb(141, 0, 0);
+    color: #FFFFFF;
 }
 
 h1 {
     color: #680148;
+    background-color: #7DB4B5;
+    letter-spacing: .15em;
+    text-shadow: 1px -1px 0 #767676f8, -1px 2px 1px #737272f1, -2px 4px 1px #767474e8, -3px 6px 1px #787777d5, -4px 8px 1px #7b7a7abb, -5px 10px 1px #7f7d7da6, -6px 12px 1px #8281818f, -7px 14px 1px #86858581, -8px 16px 1px #8b8a8977, -9px 18px 1px #8f8e8d6b, -10px 20px 1px #94939259, -11px 22px 1px #99989744, -12px 24px 1px #9e9c9c33, -13px 26px 1px #a3a1a11c, -14px 28px 1px #a8a6a615, -15px 30px 1px #adabab0c, -16px 32px 1px #b2b1b007, -17px 34px 1px #b7b6b502, -18px 36px 1px #bcbbba00, -19px 38px 1px #c1bfbf00, -20px 40px 1px #c6c4c400, -21px 42px 1px #cbc9c800, -22px 44px 1px #cfcdcd00, -23px 46px 1px #d4d2d100, -24px 48px 1px #d8d6d500, -25px 50px 1px #dbdad900, -26px 52px 1px #dfdddc00, -27px 54px 1px #e2e0df00, -28px 56px 1px #e4e3e200;
+    text-rendering: optimizeLegibility;
+}
+
+#portafolio {
+    font-weight: 600;
 }
 
 h2 {
     color: #7DB4B5;
+    background-color: #680148;
+    text-rendering: optimizeLegibility;
+}
+
+h3 {
+    text-rendering: optimizeLegibility;
+}
+
+h4 {
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    text-indent: 1.5em;
+    text-rendering: optimizeLegibility;
 }
