@@ -8,7 +8,7 @@
     <LINK REL=StyleSheet HREF="style/style.css" TYPE="text/css" MEDIA=screen>
 </head>
 
-<body background="img/cielo2.jpg">
+<body>
 
     <div id="wrapper">
         <div id="header">
@@ -16,44 +16,49 @@
                 <!-- (li>a)*3-->
                 <li><a href="">Quiénes somos</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div id="titulo" align="center">
-                <img src="img/logo.png" align="center" alt="Mi logotipo">
+                <p id="logo"> Claudio Rowe </p>
             </div>
             <!--div#nav>ul>(li>a)*4-->
             <div id="nav">
-                <ul>
-                    <li><a href="">Categoría 1</a></li>
+                <ul style="list-style-type:none;">
+                    <li><a href="#main">Portafolio</a></li>
                     <li><a href="">Categoría 2</a></li>
                     <li><a href="">Categoría 3</a></li>
                     <li><a href="">Categoría 4</a></li>
                 </ul>
             </div>
         </div>
+
         <div id="container">
+
             <div id="main">
-                <h1>Un texto muy representativo</h1>
+                <h1 align="center">Portafolio</h1><br><br>
                 <div id="section1">
                     <video src="" controls="controls" muted="muted" autoplay="autoplay" loop="loop"></video>
                 </div>
+
                 <div id="section2">
-                    <img src="http://dummyimage.com/500x300/000/fff.gif&text=imagen" alt="placeholder+image">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores qui ducimus excepturi fugiat sint.</p>
+                    <img src="http://dummyimage.com/500x300/000/fff.gif&text=imagen" alt="placeholder+image"><br><br><br><br>
+                    <h2 align="center">Lorem ipsum dolor sit amet.</h2><br><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores qui ducimus excepturi fugiat sint.</p><br><br>
                     <p><a href="" title="">+ info</a></p>
                 </div>
                 <div id="section3">
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores qui ducimus excepturi fugiat sint.</p>
-                    <p><a href="" title="">+ info</a></p>
+                    <h2 align="center">Lorem ipsum dolor sit amet.</h2><br><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum asperiores qui ducimus excepturi fugiat sint.</p><br><br>
+                    <p><a href="" title="">+ info</a></p><br>
                     <img src="http://dummyimage.com/500x300/000/fff.gif&text=imagen" alt="imagen 1">
                 </div>
                 <div id="section4">
                     <cite>Personas que conectan con personas</cite>
                 </div>
+
             </div>
         </div>
+
         <div id="footer">
             <div id="section 5">
                 <!-- 
@@ -66,7 +71,7 @@
                 <!--
                     h4+ul>(li*3)
                     -->
-                <h4>Contacto</h4>
+                <h4 id="contacto">Contacto</h4>
                 <ul>
                     <li>Talcahuano, Chile</li>
                     <li>Teléfono <a href="tel:+56991310181" title="Teléfono celular">+56991310181</a></li>
@@ -78,8 +83,10 @@
                 <img src="http://dummyimage.com/200x80/000/fff.gif&text=logotipo 2" alt="logotipo 2">
                 <img src="http://dummyimage.com/200x80/000/fff.gif&text=logotipo 3" alt="logotipo 3">
             </div>
+
         </div>
     </div>
+
 </body>
 
 </html>

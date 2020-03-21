@@ -2,14 +2,47 @@ head {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+@font-face {
+    font-family: Streamster;
+    src: url(../font/Streamster.ttf);
+}
+
 body {
+    background-image: url("../img/cielo4.jpg");
+    background-repeat: no-repeat;
     font-family: Verdana, Geneva, sans-serif;
+    -webkit-font-smoothing;
+    text-rendering: optimizeLegibility;
+    /*background-attachment: fixed;*/
+}
+
+#logo {
+    font-family: 'Streamster';
+    font-size: 100px;
+    color: black;
 }
 
 div {
     padding: 10px;
+    background-color: white;
 }
 
-#titulo {
-    all=unset;
+a {
+    text-decoration: none;
+    color: rgb(194, 0, 0);
+    font-weight: bold;
+    /*text-shadow: 0.1em 0.1em black;*/
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+}
+
+a:hover {
+    color: rgb(141, 0, 0);
+}
+
+h1 {
+    color: #680148;
+}
+
+h2 {
+    color: #7DB4B5;
 }
