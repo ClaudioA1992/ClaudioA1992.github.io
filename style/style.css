@@ -108,3 +108,8 @@ p {
 #serv {
     text-indent: 2em;
 }
+
+#pie {
+    font-size: 10px;
+    text-align: center;
+}
