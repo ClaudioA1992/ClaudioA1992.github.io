@@ -15,7 +15,7 @@
             background-image: url("../img/cielo4.jpg");
             background-repeat: no-repeat;
             font-family: Verdana, Geneva, sans-serif;
-            -webkit-font-smoothing;
+            /*-webkit-font-smoothing;*/
             text-rendering: optimizeLegibility;
             /*background-attachment: fixed;*/
         }
