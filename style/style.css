@@ -1,115 +1,125 @@
-head {
-    font-family: Verdana, Geneva, sans-serif;
-}
-
-@font-face {
-    font-family: Streamster;
-    src: url(../font/Streamster.ttf);
-}
-
-#indice {
-    text-indent: 1.5em;
-}
-
-body {
-    background-image: url("../img/cielo4.jpg");
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, sans-serif;
-    -webkit-font-smoothing;
-    text-rendering: optimizeLegibility;
-    /*background-attachment: fixed;*/
-}
-
-#logo {
-    font-family: 'Streamster';
-    font-size: 100px;
-    color: black;
-    padding-right: 200px
-}
-
-div {
-    padding: 10px;
-    background-color: white;
-}
-
-#quiensoy {
-    text-indent: 1.5em;
-    padding: 120px;
-    letter-spacing: 0.2em;
-    text-align: justify;
-}
-
-a {
-    text-decoration: none;
-    color: #E0EFF1;
-    font-weight: bold;
-    /*text-shadow: 0.1em 0.1em black;*/
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-}
-
-#video1:hover {
-    color: #FFFFFF;
-    transition: all .5s ease-in-out;
-}
-
-#video2:hover {
-    color: #FFFFFF;
-    transition: all .5s ease-in-out;
-}
-
-a:hover {
-    color: black;
-    transition: all .5s ease-in-out;
-}
-
-h1 {
-    color: #680148;
-    background-color: #7DB4B5;
-    letter-spacing: .15em;
-    text-rendering: optimizeLegibility;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
-}
-
-#portafolio {
-    font-weight: 600;
-}
-
-#desc {
-    font-size: 30px;
-}
-
-h2 {
-    margin: 0 0 0 330px;
-    width: 600px;
-    height: 30px;
-    color: #7DB4B5;
-    background-color: #680148;
-    text-rendering: optimizeLegibility;
-}
-
-#serv h2 {
-    margin: 0;
-    width: 1000px;
-}
-
-h3 {
-    text-rendering: optimizeLegibility;
-}
-
-h4 {
-    text-rendering: optimizeLegibility;
-}
-
-p {
-    text-indent: 1.5em;
-    text-rendering: optimizeLegibility;
-}
-
-#serv {
-    text-indent: 2em;
-}
-
-#pie {
-    font-size: 10px;
-    text-align: center;
-}
+        head {
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        
+        @font-face {
+            font-family: Streamster;
+            src: url(../font/Streamster.ttf);
+        }
+        
+        #indice {
+            text-indent: 1.5em;
+        }
+        
+        body {
+            background-image: url("../img/cielo4.jpg");
+            background-repeat: no-repeat;
+            font-family: Verdana, Geneva, sans-serif;
+            -webkit-font-smoothing;
+            text-rendering: optimizeLegibility;
+            /*background-attachment: fixed;*/
+        }
+        
+        #logo {
+            font-family: 'Streamster';
+            font-size: 100px;
+            color: black;
+            padding-right: 200px;
+        }
+        
+        div {
+            padding: 10px;
+            background-color: white;
+        }
+        
+        #quiensoy {
+            text-indent: 1.5em;
+            padding: 120px;
+            letter-spacing: 0.2em;
+            text-align: justify;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #E0EFF1;
+            font-weight: bold;
+            /*text-shadow: 0.1em 0.1em black;*/
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+        }
+        
+        #video1:hover {
+            color: #FFFFFF;
+            transition: all .5s ease-in-out;
+        }
+        
+        #video2:hover {
+            color: #FFFFFF;
+            transition: all .5s ease-in-out;
+        }
+        
+        a:hover {
+            color: black;
+            transition: all .5s ease-in-out;
+        }
+        
+        h1 {
+            color: #680148;
+            background-color: #7DB4B5;
+            letter-spacing: .15em;
+            text-rendering: optimizeLegibility;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+            width: 100%;
+        }
+        
+        #portafolio {
+            font-weight: 600;
+        }
+        
+        #desc {
+            font-size: 30px;
+        }
+        
+        h2 {
+            margin: 0 auto;
+            color: #7DB4B5;
+            background-color: #680148;
+            text-rendering: optimizeLegibility;
+            width: 80%;
+            text-align: center;
+        }
+        
+        #serv h2 {
+            margin: 0;
+        }
+        
+        h3 {
+            text-rendering: optimizeLegibility;
+        }
+        
+        h4 {
+            text-rendering: optimizeLegibility;
+        }
+        
+        p {
+            text-indent: 1.5em;
+            text-rendering: optimizeLegibility;
+        }
+        
+        #serv {
+            text-indent: 2em;
+        }
+        
+        #pie {
+            font-size: 10px;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width:500px) {
+            /* Celular: */
+            #titulo {
+                text-align: right;
+            }
+            #quiensoy {
+                padding: 20px;
+            }
+        }
