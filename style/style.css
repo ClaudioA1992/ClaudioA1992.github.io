@@ -122,4 +122,9 @@
             #quiensoy {
                 padding: 20px;
             }
+            #video01,
+            #video02 {
+                width: 85%;
+                height: 85%;
+            }
         }
