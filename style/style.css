@@ -7,6 +7,23 @@
             src: url(../font/Streamster.ttf);
         }
         
+        p {
+            text-indent: 1.5em;
+            text-rendering: optimizeLegibility;
+        }
+        /*#titulo {
+            align: center;
+        }*/
+        
+        #logo {
+            font-family: 'Streamster';
+            font-size: 100px;
+            color: black;
+            padding-right: 10vw;
+            text-indent: none;
+            text-align: center;
+        }
+        
         #indice {
             text-indent: 1.5em;
         }
@@ -18,13 +35,6 @@
             /*-webkit-font-smoothing;*/
             text-rendering: optimizeLegibility;
             /*background-attachment: fixed;*/
-        }
-        
-        #logo {
-            font-family: 'Streamster';
-            font-size: 100px;
-            color: black;
-            padding-right: 200px;
         }
         
         div {
@@ -84,7 +94,7 @@
             color: #7DB4B5;
             background-color: #680148;
             text-rendering: optimizeLegibility;
-            width: 80%;
+            width: 80vw;
             text-align: center;
         }
         
@@ -100,11 +110,6 @@
             text-rendering: optimizeLegibility;
         }
         
-        p {
-            text-indent: 1.5em;
-            text-rendering: optimizeLegibility;
-        }
-        
         #serv {
             text-indent: 2em;
         }
@@ -116,8 +121,8 @@
         
         @media only screen and (max-width:500px) {
             /* Celular: */
-            #titulo {
-                text-align: right;
+            #logo {
+                font-size: 35px;
             }
             #quiensoy {
                 padding: 20px;
@@ -126,5 +131,21 @@
             #video02 {
                 width: 85%;
                 height: 85%;
+            }
+            #ins2,
+            #ins2,
+            #ins3,
+            #ins4,
+            #ins5 {
+                width: 50%;
+                height: 50%;
+            }
+            div {
+                padding: 5px;
+                padding-left: 0.5vw;
+            }
+            #desc {
+                text-indent: 0px;
+                text-align: justify;
             }
         }
