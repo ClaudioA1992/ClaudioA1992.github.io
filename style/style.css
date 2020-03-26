@@ -155,10 +155,9 @@ h4 {
         width: 80%;
         height: 50%;
     }
-    /*div {
-        padding: 5px;
-        padding-left: 0.5vw;
-    }*/
+    div {
+        padding: 0.7vw;
+    }
     #desc {
         text-indent: 0px;
         text-align: justify;
