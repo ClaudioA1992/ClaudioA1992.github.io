@@ -46,9 +46,17 @@ div {
 
 #quiensoy {
     text-indent: 1.5em;
-    padding: 120px;
+    padding: 10px;
     letter-spacing: 0.2em;
     text-align: justify;
+}
+
+#bio {
+    padding: 5vw;
+}
+
+#container {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../img/pipes.jpg);
 }
 
 a {
@@ -100,8 +108,13 @@ h2 {
     text-align: center;
 }
 
+#serv h1 {
+    text-indent: 2em;
+}
+
 #serv h2 {
     margin: 0;
+    text-align: left;
 }
 
 h3 {
@@ -130,6 +143,11 @@ h4 {
     #video02 {
         width: 85%;
         height: 85%;
+    }
+    #desc {
+        text-indent: 0px;
+        text-align: justify;
+        font-size: 20px;
     }
 }
 
@@ -161,5 +179,9 @@ h4 {
     #desc {
         text-indent: 0px;
         text-align: justify;
+        font-size: 20px;
+    }
+    #container {
+        background: none;
     }
 }
