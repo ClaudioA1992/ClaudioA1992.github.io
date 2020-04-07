@@ -30,10 +30,6 @@ p {
     text-indent: 1.5em;
 }
 
-#links {
-    "list-style-type:none;"
-}
-
 body {
     background-image: url("../img/cielo4.jpg");
     background-repeat: no-repeat;
