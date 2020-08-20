@@ -95,7 +95,7 @@ h1 {
     font-weight: 600;
 }
 
-#desc {
+.desc {
     font-size: 30px;
 }
 
@@ -139,12 +139,15 @@ h4 {
     #logo {
         font-size: 45px;
     }
+    #quiensoy {
+        padding: 5px;
+    }
     #video01,
     #video02 {
         width: 85%;
         height: 85%;
     }
-    #desc {
+    .desc {
         text-indent: 0px;
         text-align: justify;
         font-size: 20px;
@@ -157,7 +160,7 @@ h4 {
         font-size: 35px;
     }
     #quiensoy {
-        padding: 20px;
+        padding: 1px;
     }
     #video01,
     #video02 {
@@ -176,7 +179,7 @@ h4 {
     div {
         padding: 0.7vw;
     }
-    #desc {
+    .desc {
         text-indent: 0px;
         text-align: justify;
         font-size: 20px;
