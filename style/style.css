@@ -7,6 +7,15 @@ head {
     src: url(../font/Streamster.ttf);
 }
 
+body {
+    background-image: url("../img/cielo4.jpg");
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, sans-serif;
+    /*-webkit-font-smoothing;*/
+    text-rendering: optimizeLegibility;
+    /*background-attachment: fixed;*/
+}
+
 p {
     text-indent: 1.5em;
     text-rendering: optimizeLegibility;
@@ -30,18 +39,10 @@ p {
     text-indent: 1.5em;
 }
 
-body {
-    background-image: url("../img/cielo4.jpg");
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, sans-serif;
-    /*-webkit-font-smoothing;*/
-    text-rendering: optimizeLegibility;
-    /*background-attachment: fixed;*/
-}
-
 div {
     padding: 1vw;
     background-color: white;
+    border-radius: 100px;
 }
 
 #quiensoy {
@@ -178,8 +179,35 @@ h4 {
     }*/
     div {
         padding: 0.7vw;
+        border-radius: 30px;
     }
     .desc {
+        text-indent: 0px;
+        text-align: justify;
+        font-size: 20px;
+    }
+    #container {
+        background: none;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    /* Celular: */
+    #logo {
+        font-size: 35px;
+    }
+    #quiensoy {
+        padding: 20px;
+    }
+    /*#port {
+        width: 50%;
+        height: 50%;
+    }*/
+    div {
+        padding: 0.7vw;
+        border-radius: 30px;
+    }
+    #desc {
         text-indent: 0px;
         text-align: justify;
         font-size: 20px;
