@@ -10,7 +10,7 @@ head {
 body {
     background-image: url("../img/cielo4.jpg");
     background-repeat: no-repeat;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Arial, Verdana, Geneva, sans-serif;
     /*-webkit-font-smoothing;*/
     text-rendering: optimizeLegibility;
     /*background-attachment: fixed;*/
@@ -21,16 +21,15 @@ p {
     text-rendering: optimizeLegibility;
 }
 
-
-/*#titulo {
-            align: center;
-        }*/
+#titulo {
+    padding: 0;
+}
 
 #logo {
     font-family: 'Streamster';
     font-size: 100px;
-    color: black;
-    padding-right: 10vw;
+    color: rgb(0, 183, 255);
+    padding-right: 10.5vw;
     text-indent: none;
     text-align: center;
 }
@@ -42,13 +41,13 @@ p {
 div {
     padding: 1vw;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 20px;
 }
 
 #quiensoy {
     text-indent: 1.5em;
     padding: 10px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     text-align: justify;
 }
 
@@ -57,12 +56,12 @@ div {
 }
 
 #container {
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(../img/pipes.jpg);
+    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0)), url(../img/lava2.jpg);
 }
 
 a {
     text-decoration: none;
-    color: #E0EFF1;
+    color: #2c1302;
     font-weight: bold;
     /*text-shadow: 0.1em 0.1em black;*/
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
@@ -79,17 +78,18 @@ a {
 }
 
 a:hover {
-    color: black;
-    transition: all .5s ease-in-out;
+    color: rgb(230, 0, 0);
+    transition: all .3s ease-in-out;
 }
 
 h1 {
-    color: #680148;
-    background-color: #7DB4B5;
-    letter-spacing: .15em;
+    color: #ffa42c;
+    background-color: #312424;
+    letter-spacing: .05em;
     text-rendering: optimizeLegibility;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
     width: 100%;
+    background: linear-gradient(71deg, white 2%, #312424 2%);
 }
 
 #portafolio {
@@ -102,11 +102,12 @@ h1 {
 
 h2 {
     margin: 0 auto;
-    color: #7DB4B5;
-    background-color: #680148;
+    color: #8f0101;
+    background-color: #420d0d;
     text-rendering: optimizeLegibility;
     width: 80vw;
     text-align: center;
+    background: linear-gradient(71deg, white 2%, #420d0d 2%);
 }
 
 #serv h1 {
@@ -115,7 +116,13 @@ h2 {
 
 #serv h2 {
     margin: 0;
+    margin-left: 0.3em;
     text-align: left;
+    padding-left: .02em;
+}
+
+#serv p {
+    margin-left: 1vw;
 }
 
 h3 {
@@ -130,7 +137,7 @@ h4 {
     text-indent: 2em;
 }
 
-#pie {
+#credito {
     font-size: 10px;
     text-align: center;
 }
