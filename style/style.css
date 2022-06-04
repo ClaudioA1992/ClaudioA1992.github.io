@@ -16,6 +16,10 @@ body {
     /*background-attachment: fixed;*/
 }
 
+#wrapper {
+    border-radius: 20px;
+}
+
 p {
     text-indent: 1.5em;
     text-rendering: optimizeLegibility;
@@ -41,7 +45,6 @@ p {
 div {
     padding: 1vw;
     background-color: white;
-    border-radius: 20px;
 }
 
 #quiensoy {
@@ -134,7 +137,7 @@ h4 {
 }
 
 #serv {
-    text-indent: 2em;
+    text-indent: 4em;
 }
 
 #credito {
