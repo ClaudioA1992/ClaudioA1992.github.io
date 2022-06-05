@@ -17,12 +17,16 @@ body {
 }
 
 #wrapper {
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 p {
     text-indent: 1.5em;
     text-rendering: optimizeLegibility;
+}
+
+ul {
+    list-style-type: none;
 }
 
 #titulo {
@@ -72,12 +76,12 @@ a {
 
 #video1:hover {
     color: #FFFFFF;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #video2:hover {
     color: #FFFFFF;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
@@ -124,10 +128,6 @@ h2 {
     padding-left: .02em;
 }
 
-#serv p {
-    margin-left: 1vw;
-}
-
 h3 {
     text-rendering: optimizeLegibility;
 }
@@ -138,6 +138,12 @@ h4 {
 
 #serv {
     text-indent: 4em;
+}
+
+#serv p {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
 }
 
 #credito {
