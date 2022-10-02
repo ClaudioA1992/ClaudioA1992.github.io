@@ -58,6 +58,10 @@ div {
     padding: 5vw;
 }
 
+#bio-eng {
+    padding: 5vw;
+}
+
 #container {
     background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0)), url(../img/lava2.jpg);
 }
@@ -141,6 +145,11 @@ h4 {
 }
 
 #credito {
+    font-size: 10px;
+    text-align: center;
+}
+
+#credit {
     font-size: 10px;
     text-align: center;
 }
