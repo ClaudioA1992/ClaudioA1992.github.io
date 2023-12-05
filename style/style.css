@@ -77,12 +77,12 @@ a {
 
 #video1:hover {
     color: #FFFFFF;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 #video2:hover {
     color: #FFFFFF;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
@@ -131,6 +131,12 @@ h2 {
 
 #serv p {
     margin-left: 1vw;
+    margin-top: 0.2vh;
+    margin-bottom: 0.4vh;
+}
+
+#serv h4 {
+    margin-top: 0.5vh;
 }
 
 h3 {
