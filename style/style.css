@@ -17,7 +17,8 @@ body {
 }
 
 #wrapper {
-    border-radius: 20px;
+    border-radius: 0px;
+    margin: 2em;
 }
 
 p {
@@ -198,7 +199,7 @@ h4 {
     }*/
     div {
         padding: 0.7vw;
-        border-radius: 30px;
+        border-radius: 0px;
     }
     .desc {
         text-indent: 0px;
@@ -224,7 +225,7 @@ h4 {
     }*/
     div {
         padding: 0.7vw;
-        border-radius: 30px;
+        border-radius: 0px;
     }
     #desc {
         text-indent: 0px;
