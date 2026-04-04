@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Claudio Torres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 60px;
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .subtitle {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 12px 12px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .data-table th {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table td {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .mono {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        .back-link::before {
+            content: '←';
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover::before {
+            transform: translateX(-4px);
+        }
+
+        @media (max-width: 600px) {
+            .glass {
+                padding: 40px 24px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .data-table {
+                font-size: 0.8rem;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass">
+        <h1>Política de Privacidad</h1>
+        <p class="subtitle">Claudio Torres | Última actualización: 4 de abril de 2026</p>
+
+        <h2>1. Identidad del Responsable</h2>
+        <div class="highlight-box">
+            <p><strong>Nombre:</strong> Claudio Torres</p>
+            <p><strong>Correo electrónico:</strong> claudio.rowe.1992@gmail.com</p>
+            <p><strong>Ubicación:</strong> Chile</p>
+            <p><strong>Actividad:</strong> Artista musical independiente</p>
+        </div>
+
+        <h2>2. Datos Personales que Recopilo</h2>
+        <p>Al visitar mi portafolio musical, recopilo automáticamente:</p>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Dato</th>
+                    <th>Propósito</th>
+                    <th>Base Legal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mono">Dirección IP</td>
+                    <td>Ubicación geográfica aproximada</td>
+                    <td>Interés legítimo</td>
+                </tr>
+                <tr>
+                    <td class="mono">Ciudad/Región</td>
+                    <td>Entender alcance geográfico</td>
+                    <td>Interés legítimo</td>
+                </tr>
+                <tr>
+                    <td class="mono">Tipo de dispositivo</td>
+                    <td>Optimizar experiencia</td>
+                    <td>Interés legítimo</td>
+                </tr>
+                <tr>
+                    <td class="mono">Navegador</td>
+                    <td>Compatibilidad técnica</td>
+                    <td>Interés legítimo</td>
+                </tr>
+                <tr>
+                    <td class="mono">Referente</td>
+                    <td>Canales de descubrimiento</td>
+                    <td>Interés legítimo</td>
+                </tr>
+                <tr>
+                    <td class="mono">Timestamp</td>
+                    <td>Análisis temporal</td>
+                    <td>Interés legítimo</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>No recopilo:</strong> Nombre, correo electrónico, teléfono, RUT, ni información que te identifique directamente como persona.</p>
+
+        <h2>3. Finalidad del Tratamiento</h2>
+        <ul>
+            <li>Comprender la distribución geográfica de mi audiencia musical</li>
+            <li>Saber qué dispositivos y navegadores utilizan mis fans</li>
+            <li>Medir qué canales de promoción generan más tráfico</li>
+            <li>Mejorar la experiencia del sitio y mi estrategia musical</li>
+        </ul>
+
+        <h2>4. Derechos del Titular</h2>
+        <p>Bajo la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong> (vigente actualmente), tienes derecho a:</p>
+
+        <div class="highlight-box">
+            <ul>
+                <li><strong>Acceso:</strong> Saber qué datos tengo sobre ti</li>
+                <li><strong>Rectificación:</strong> Corregir datos inexactos</li>
+                <li><strong>Eliminación:</strong> Solicitar borrado de tus datos</li>
+            </ul>
+            <p style="margin-top: 15px; margin-bottom: 0;"><strong>Nota:</strong> A partir del 1 de diciembre de 2026, la nueva Ley 21.719 añadirá los derechos de oposición y portabilidad.</p>
+        </div>
+
+        <h2>5. Plazos de Conservación</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Tipo de dato</th>
+                    <th>Plazo</th>
+                    <th>Justificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Direcciones IP completas</td>
+                    <td class="mono">30 días</td>
+                    <td>Análisis temporal de audiencia</td>
+                </tr>
+                <tr>
+                    <td>Estadísticas anonimizadas</td>
+                    <td class="mono">Indefinido</td>
+                    <td>Análisis histórico de alcance</td>
+                </tr>
+                <tr>
+                    <td>Patrones de tráfico</td>
+                    <td class="mono">90 días</td>
+                    <td>Medición de efectividad</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>6. Contacto para Derechos</h2>
+        <p>Para ejercer tus derechos ARCOP+ o cualquier consulta sobre privacidad:</p>
+        <div class="highlight-box">
+            <p class="mono" style="margin-bottom: 0;">Email: claudio.rowe.1992@gmail.com<br>
+            Asunto: "Solicitud ARCOP - [tu nombre]"</p>
+        </div>
+
+        <h2>7. Medidas de Seguridad</h2>
+        <ul>
+            <li>Almacenamiento en servidores seguros (Google Sheets/Cloudflare)</li>
+            <li>Acceso limitado exclusivamente al artista</li>
+            <li>No comparto datos con terceros para marketing</li>
+            <li>Conexión HTTPS encriptada en todo momento</li>
+        </ul>
+
+        <h2>8. Modificaciones</h2>
+        <p>Actualizaré esta política si cambian las leyes chilenas o mis prácticas. La fecha de actualización aparecerá en la parte superior de esta página.</p>
+
+        <h2>9. Legislación Aplicable</h2>
+        <p>Esta política cumple con la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong>, vigente en Chile actualmente.</p>
+        <p>A partir del <strong>1 de diciembre de 2026</strong>, también cumplirá con la <strong>Ley 21.719 de Protección de Datos Personales</strong>.</p>
+
+        <a href="index.html" class="back-link">Volver al portafolio</a>
+    </div>
+</body>
+</html>

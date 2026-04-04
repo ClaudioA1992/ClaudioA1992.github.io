@@ -161,6 +161,32 @@ h4 {
     text-align: center;
 }
 
+.analytics-notice {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Space Mono', monospace;
+}
+
+.analytics-notice span {
+    margin-right: 15px;
+}
+
+.analytics-notice a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.analytics-notice a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
 @media only screen and (max-width:800px) {
     /* Tablets: */
     #logo {
