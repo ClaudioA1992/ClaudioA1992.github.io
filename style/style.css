@@ -54,7 +54,7 @@ p {
 }
 
 div {
-    padding: 0.5vw;
+    padding: 1vw;
     background-color: white;
 }
 
@@ -84,6 +84,17 @@ div {
 
 #port {
     background-color: transparent;
+}
+
+#videos,
+#ins1,
+#ins2 {
+    text-align: center;
+}
+
+#videos .instagram-media {
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 a {
@@ -116,7 +127,7 @@ h1 {
     text-rendering: optimizeLegibility;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
     width: 100%;
-    background: linear-gradient(71deg, white 2%, #312424 2%);
+    background: linear-gradient(71deg, transparent 2%, #312424 2%);
 }
 
 #portafolio {
@@ -134,7 +145,7 @@ h2 {
     text-rendering: optimizeLegibility;
     width: 80vw;
     text-align: center;
-    background: linear-gradient(71deg, white 2%, #420d0d 2%);
+    background: linear-gradient(71deg, transparent 2%, #420d0d 2%);
 }
 
 #serv h1 {
