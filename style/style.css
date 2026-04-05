@@ -180,13 +180,26 @@ h4 {
     text-align: center;
 }
 
+#container-credito {
+    padding: 0.35rem 1vw 0.7rem;
+}
+
+#container-credito hr {
+    margin: 0.2rem 0 0.4rem;
+}
+
+#container-credito #credito,
+#container-credito #credit {
+    margin: 0.12rem 0;
+}
+
 .analytics-notice {
     text-align: right;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 30px;
-    padding-top: 20px;
+    margin-top: 42px;
+    padding-top: 16px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
