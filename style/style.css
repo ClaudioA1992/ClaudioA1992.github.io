@@ -30,9 +30,15 @@ p {
 }
 
 #titulo {
-    padding: 0.35rem 0;
+    padding: 0.75rem 0;
     text-align: center;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(210, 240, 255, 0.45) 50%, rgba(255, 255, 255, 0) 100%);
+    background:
+        linear-gradient(180deg, rgba(7, 26, 40, 0.18) 0%, rgba(7, 26, 40, 0.42) 100%),
+        url("../img/cielo4.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.45);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #logo {
@@ -46,15 +52,11 @@ p {
     transform: scaleY(1.08);
     transform-origin: center;
     font-size: 100px;
-    color: #00b7ff;
-    background: linear-gradient(180deg, #8de7ff 0%, #28c7ff 36%, #00a8ef 66%, #007eb8 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #eaf8ff;
     padding-right: 0;
     text-indent: 0;
     text-align: center;
-    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.18), 0 8px 14px rgba(0, 100, 145, 0.35);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25), 0 9px 14px rgba(0, 0, 0, 0.45), 0 0 12px rgba(120, 220, 255, 0.3);
 }
 
 #indice {
