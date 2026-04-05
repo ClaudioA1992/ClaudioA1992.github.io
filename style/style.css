@@ -30,8 +30,9 @@ p {
 }
 
 #titulo {
-    padding: 0;
+    padding: 0.35rem 0;
     text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(210, 240, 255, 0.45) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 #logo {
@@ -39,14 +40,21 @@ p {
     font-weight: 600;
     letter-spacing: 0.03em;
     line-height: 0.95;
-    display: inline-block;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
     transform: scaleY(1.08);
     transform-origin: center;
     font-size: 100px;
-    color: rgb(0, 183, 255);
+    color: #00b7ff;
+    background: linear-gradient(180deg, #8de7ff 0%, #28c7ff 36%, #00a8ef 66%, #007eb8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-right: 0;
-    text-indent: none;
+    text-indent: 0;
     text-align: center;
+    text-shadow: 0 2px 0 rgba(255, 255, 255, 0.18), 0 8px 14px rgba(0, 100, 145, 0.35);
 }
 
 #indice {
@@ -205,9 +213,9 @@ h4 {
 }
 
 .analytics-notice {
-    text-align: right;
+    text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-top: 42px;
     padding-top: 16px;
@@ -217,8 +225,16 @@ h4 {
     font-family: 'Space Mono', monospace;
 }
 
-.analytics-notice span {
-    margin-right: 15px;
+.analytics-notice .notice-separator {
+    margin: 0 8px;
+    color: #000;
+}
+
+.analytics-notice .notice-owner {
+    color: #000;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 }
 
 .analytics-notice a {
