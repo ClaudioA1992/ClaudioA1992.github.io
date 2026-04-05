@@ -84,12 +84,32 @@ div {
 }
 
 #container {
+    position: relative;
+    overflow: hidden;
     background:
         radial-gradient(circle at 50% 52%, rgba(255, 205, 120, 0.45) 0%, rgba(255, 130, 40, 0.24) 28%, rgba(170, 38, 0, 0.18) 52%, rgba(90, 12, 0, 0) 70%),
         radial-gradient(circle at 22% 74%, rgba(255, 120, 35, 0.22) 0%, rgba(255, 120, 35, 0) 42%),
         radial-gradient(circle at 78% 74%, rgba(255, 95, 20, 0.22) 0%, rgba(255, 95, 20, 0) 44%),
-        linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0)),
-        url(../img/lava2.jpg);
+        linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0));
+}
+
+#container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("../img/lava3.jpeg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: center top;
+    transform: rotate(180deg);
+    transform-origin: center;
+    z-index: 0;
+}
+
+#container > * {
+    position: relative;
+    z-index: 1;
 }
 
 #port {
