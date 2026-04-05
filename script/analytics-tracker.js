@@ -1,18 +1,26 @@
 (function () {
-  const ANALYTICS_URL =
-    "https://script.google.com/macros/s/AKfycbxg6k1nhtVSlS2bCIQPKe4YHpAParsXV1vX9t-QxEGGUuCT81rUS_gr1joWv2Tqrw5w/exec";
+  const ANALYTICS_URL = "https://script.google.com/macros/s/AKfycbw_dymI8Vr622CGFPs4Q74erhLGmw7b36W9ZO63cC4NaYh3Pvo3gyPocSYS_62amas/exec";
   let visitorContext = null;
   let clickCount = 0;
   const MAX_CLICKS_PER_SESSION = 30;
+
+  // CAPTURAR PARÁMETROS UTM
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmData = {
+    utmSource: urlParams.get('utm_source') || 'Direct',
+    utmMedium: urlParams.get('utm_medium') || 'none',
+    utmCampaign: urlParams.get('utm_campaign') || 'none',
+    utmContent: urlParams.get('utm_content') || 'none',
+    utmTerm: urlParams.get('utm_term') || 'none'
+  };
 
   const baseEventData = {
     eventType: "pageview",
     pagePath: window.location.pathname,
     pageTitle: document.title,
-    language:
-      document.documentElement.getAttribute("data-lang") ||
-      document.documentElement.lang ||
-      "unknown",
+    language: document.documentElement.getAttribute("data-lang") || document.documentElement.lang || "unknown",
+    // AÑADIR UTM A TODOS LOS EVENTOS
+    ...utmData
   };
 
   // Try ipinfo.io first (better CORS)
@@ -28,7 +36,7 @@
       });
     })
     .catch(() => {
-      // Fallback: try ipapi with JSONP or skip
+    // Fallback: try ipapi with JSONP or skip
       return tryJSONP();
     })
     .catch(() => {
@@ -67,9 +75,8 @@
   function sendData(locationData) {
     const analyticsData = {
       ...locationData,
-      device: /Mobile|Android|iPhone|iPad/.test(navigator.userAgent)
-        ? "Mobile"
-        : "Desktop",
+      ...utmData, // INCLUIR UTM EN CADA ENVÍO
+      device: /Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? "Mobile" : "Desktop",
       browser: (function () {
         const ua = navigator.userAgent;
         if (ua.includes("Chrome")) return "Chrome";
@@ -89,6 +96,9 @@
       device: analyticsData.device,
       browser: analyticsData.browser,
       referrer: analyticsData.referrer,
+      utmSource: analyticsData.utmSource,
+      utmMedium: analyticsData.utmMedium,
+      utmCampaign: analyticsData.utmCampaign
     };
 
     fetch(ANALYTICS_URL, {
@@ -137,11 +147,12 @@
         city: "Unknown",
         region: "Unknown",
         country: "Unknown",
-        device: /Mobile|Android|iPhone|iPad/.test(navigator.userAgent)
-          ? "Mobile"
-          : "Desktop",
+        device: /Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? "Mobile" : "Desktop",
         browser: "Unknown",
         referrer: document.referrer || "Direct",
+        utmSource: utmData.utmSource,
+        utmMedium: utmData.utmMedium,
+        utmCampaign: utmData.utmCampaign
       }),
       ...baseEventData,
       eventType: "click",
