@@ -2,11 +2,6 @@ head {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-@font-face {
-    font-family: Streamster;
-    src: url(../font/Streamster.ttf);
-}
-
 body {
     background-image: url("../img/cielo4.jpg");
     background-repeat: no-repeat;
@@ -31,7 +26,13 @@ p {
 }
 
 #logo {
-    font-family: 'Streamster';
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 0.95;
+    display: inline-block;
+    transform: scaleY(1.08);
+    transform-origin: center;
     font-size: 100px;
     color: rgb(0, 183, 255);
     padding-right: 10.5vw;
