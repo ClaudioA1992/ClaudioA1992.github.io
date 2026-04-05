@@ -217,24 +217,34 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 42px;
-    padding-top: 16px;
+    width: 100%;
+    margin: 42px auto 0;
+    padding: 16px 0 0;
+    gap: 4px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 11px;
+    font-size: 10px;
+    line-height: 1;
+    text-indent: 0;
     color: rgba(255, 255, 255, 0.5);
     font-family: 'Space Mono', monospace;
 }
 
+.analytics-notice > * {
+    margin: 0 !important;
+}
+
 .analytics-notice .notice-separator {
-    margin: 0 8px;
+    margin: 0 4px !important;
     color: #000;
+    font-size: 10px;
 }
 
 .analytics-notice .notice-owner {
     color: #000;
     font-family: 'Cinzel', serif;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    font-size: 10px;
 }
 
 .analytics-notice a {
@@ -242,6 +252,7 @@ h4 {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
+    font-size: 10px;
 }
 
 .analytics-notice a:hover {
