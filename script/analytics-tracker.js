@@ -341,9 +341,11 @@
       const embedId = embedIndex > 0 ? `embed-${embedIndex}` : "embed-unknown";
       const subArea = getInstagramSubArea(localX, localY, profile);
       const subAreaConfidence = getSubAreaConfidence(hasFreshPointer, localX, localY);
+      const confidenceTag = Math.round(subAreaConfidence * 100);
+      const sourceTag = hasFreshPointer ? "ptr" : "fb";
       const targetLabel = postPath
-        ? `instagram:${embedId}:${postPath}:${subArea}`
-        : `instagram:${embedId}:${subArea}`;
+        ? `instagram:${embedId}:${postPath}:${subArea}:c${confidenceTag}:${sourceTag}`
+        : `instagram:${embedId}:${subArea}:c${confidenceTag}:${sourceTag}`;
 
       const eventData = {
         ...(visitorContext || {
