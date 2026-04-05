@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidad | Claudio Torres</title>
+    <script>
+        (function () {
+            var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+            var isSpanish = preferred.toLowerCase().indexOf('es') === 0;
+            document.documentElement.setAttribute('data-lang', isSpanish ? 'es' : 'en');
+            document.documentElement.lang = isSpanish ? 'es' : 'en';
+        })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -24,6 +32,14 @@
             justify-content: center;
             padding: 40px 20px;
             line-height: 1.6;
+        }
+
+        html[data-lang="es"] .lang-en {
+            display: none !important;
+        }
+
+        html[data-lang="en"] .lang-es {
+            display: none !important;
         }
 
         .glass {
@@ -192,6 +208,7 @@
 </head>
 <body>
     <div class="glass">
+        <div class="lang-es">
         <h1>Política de Privacidad</h1>
         <p class="subtitle">Claudio Torres | Última actualización: 4 de abril de 2026</p>
 
@@ -320,7 +337,141 @@
         <p>Esta política cumple con la <strong>Ley 19.628 sobre Protección de la Vida Privada</strong>, vigente en Chile actualmente.</p>
         <p>A partir del <strong>1 de diciembre de 2026</strong>, también cumplirá con la <strong>Ley 21.719 de Protección de Datos Personales</strong>.</p>
 
-        <a href="index.html" class="back-link">Volver al portafolio</a>
+        <h2>10. Cumplimiento Internacional</h2>
+        <div class="highlight-box">
+            <p>Esta política también se alinea con principios de privacidad reconocidos internacionalmente, incluyendo:</p>
+            <ul>
+                <li><strong>UE GDPR / UK GDPR:</strong> transparencia, limitación de finalidad, minimización de datos, limitación de conservación y medidas de seguridad</li>
+                <li><strong>CCPA/CPRA (California):</strong> derecho a conocer, eliminar y solicitar detalles sobre el tratamiento, cuando corresponda</li>
+                <li><strong>Estándares internacionales generales:</strong> licitud, lealtad, responsabilidad y derechos de acceso/rectificación/eliminación</li>
+            </ul>
+            <p style="margin-top: 15px; margin-bottom: 0;"><strong>Contacto:</strong> Para ejercer derechos de privacidad, escribe a claudio.rowe.1992@gmail.com con asunto "Solicitud de Privacidad".</p>
+        </div>
+
+        </div>
+
+        <div class="lang-en">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Claudio Torres | Last updated: April 4, 2026</p>
+
+        <h2>1. Data Controller</h2>
+        <div class="highlight-box">
+            <p><strong>Name:</strong> Claudio Torres</p>
+            <p><strong>Email:</strong> claudio.rowe.1992@gmail.com</p>
+            <p><strong>Location:</strong> Chile</p>
+            <p><strong>Activity:</strong> Independent music artist</p>
+        </div>
+
+        <h2>2. Personal Data I Collect</h2>
+        <p>When you visit my portfolio, I automatically collect:</p>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Purpose</th>
+                    <th>Legal Basis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mono">IP address</td>
+                    <td>Approximate geolocation</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td class="mono">City/Region</td>
+                    <td>Understand audience reach</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td class="mono">Device type</td>
+                    <td>Improve user experience</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td class="mono">Browser</td>
+                    <td>Technical compatibility</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td class="mono">Referrer</td>
+                    <td>Traffic source analysis</td>
+                    <td>Legitimate interest</td>
+                </tr>
+                <tr>
+                    <td class="mono">Timestamp</td>
+                    <td>Trend analysis</td>
+                    <td>Legitimate interest</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>I do not collect:</strong> name, email, phone number, national ID, or directly identifying data through this analytics setup.</p>
+
+        <h2>3. Purpose of Processing</h2>
+        <ul>
+            <li>Understand where listeners come from geographically</li>
+            <li>Know what devices and browsers visitors use</li>
+            <li>Measure which channels drive traffic</li>
+            <li>Improve site experience and artist strategy</li>
+        </ul>
+
+        <h2>4. Data Subject Rights</h2>
+        <p>You may request access, correction, and deletion of personal data associated with your visit, in accordance with applicable privacy laws.</p>
+
+        <h2>5. Retention Periods</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Retention</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Full IP addresses</td>
+                    <td class="mono">30 days</td>
+                    <td>Short-term audience analysis</td>
+                </tr>
+                <tr>
+                    <td>Anonymized statistics</td>
+                    <td class="mono">Indefinite</td>
+                    <td>Historical trends</td>
+                </tr>
+                <tr>
+                    <td>Traffic patterns</td>
+                    <td class="mono">90 days</td>
+                    <td>Performance measurement</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>6. Security Measures</h2>
+        <ul>
+            <li>Storage on secure providers (Google Sheets/Cloudflare)</li>
+            <li>Access restricted to the site owner</li>
+            <li>No sale of personal data and no third-party ad marketing use</li>
+            <li>HTTPS encrypted connection</li>
+        </ul>
+
+        <h2>7. International Compliance</h2>
+        <div class="highlight-box">
+            <p>This privacy notice is designed to align with internationally recognized privacy principles, including:</p>
+            <ul>
+                <li><strong>EU GDPR / UK GDPR:</strong> transparency, purpose limitation, data minimization, storage limitation, and security safeguards</li>
+                <li><strong>CCPA/CPRA (California):</strong> right to know, delete, and request data handling details where applicable</li>
+                <li><strong>General international standards:</strong> fairness, accountability, and user rights for access/correction/deletion</li>
+            </ul>
+            <p style="margin-top: 15px; margin-bottom: 0;"><strong>Contact:</strong> To exercise privacy rights, email claudio.rowe.1992@gmail.com with subject line "Privacy Request".</p>
+        </div>
+
+        <h2>8. Applicable Law</h2>
+        <p>This site is operated from Chile and follows Chilean privacy law, while maintaining internationally aligned privacy practices for global visitors.</p>
+        </div>
+
+        <a href="index.html" class="back-link"><span class="lang-es">Volver al portafolio</span><span class="lang-en">Back to portfolio</span></a>
     </div>
 </body>
 </html>

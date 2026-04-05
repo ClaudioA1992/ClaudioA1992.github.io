@@ -7,6 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="FSJ" />
     <title>Claudio</title>
+    <script>
+      (function() {
+        var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+        var isSpanish = preferred.toLowerCase().indexOf('es') === 0;
+        document.documentElement.setAttribute('data-lang', isSpanish ? 'es' : 'en');
+        document.documentElement.lang = isSpanish ? 'es' : 'en';
+      })();
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,9 +47,9 @@
       <div id="header">
         <ul id="links" style="list-style-type: none" align="right">
           <!-- (li>a)*3-->
-          <li><a href="#quiensoy">Quién soy</a></li>
+          <li><a href="#quiensoy"><span class="lang-es">Quién soy</span><span class="lang-en">About me</span></a></li>
           <li><a href="http://www.instagram.com/claudiorowe">Instagram</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contacto"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         </ul>
 
         <div id="titulo">
@@ -49,20 +57,20 @@
         </div>
 
         <div id="indice ">
-          <h4>Índice</h4>
+          <h4><span class="lang-es">Índice</span><span class="lang-en">Index</span></h4>
           <ul>
-            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#portafolio"><span class="lang-es">Portafolio</span><span class="lang-en">Portfolio</span></a></li>
             <ul>
-              <li><a href="#guitarra">Guitarrista</a></li>
-              <li><a href="#produccion">Producción</a></li>
+              <li><a href="#guitarra"><span class="lang-es">Guitarrista</span><span class="lang-en">Guitarist</span></a></li>
+              <li><a href="#produccion"><span class="lang-es">Producción</span><span class="lang-en">Production</span></a></li>
             </ul>
-            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#servicios"><span class="lang-es">Servicios</span><span class="lang-en">Services</span></a></li>
           </ul>
         </div>
 
         <div id="quiensoy">
-          <h3>Quien soy</h3>
-          <p id="bio">
+          <h3 class="lang-es">Quien soy</h3>
+          <p id="bio" class="lang-es">
             Hola, soy Claudio, músico hace 20 años. Empecé a tocar la guitarra
             por la intensidad que me transmitió el heavy metal, y esa pasión me
             llevó a introducirme en otros estilos y a hacer de esto mi estilo de
@@ -70,8 +78,8 @@
             de los servicios que ofrezco. Sientente libre de contactarme para más información.
           </p>
 
-          <h3>Who am i</h3>
-          <p id="bio-eng">
+          <h3 class="lang-en">Who am i</h3>
+          <p id="bio-eng" class="lang-en">
             Hi, i'm Claudio, a musician since 20 years. I started playing guitar
             because of the intensity that heavy metal transmitted, and that
             pasion took me to introduce myself into another styles and make this
@@ -83,9 +91,9 @@
 
       <div id="container">
         <div id="port">
-          <h1 align="center" id="portafolio">Portafolio - Portfolio</h1>
+          <h1 align="center" id="portafolio"><span class="lang-es">Portafolio</span><span class="lang-en">Portfolio</span></h1>
           <br /><br />
-          <h2 align="center" id="guitarra">Guitarrista - Guitarist</h2>
+          <h2 align="center" id="guitarra"><span class="lang-es">Guitarrista</span><span class="lang-en">Guitarist</span></h2>
           <br /><br />
           <div id="videos"> 
             
@@ -263,7 +271,7 @@
 
             <div>
               <p id="desc" align="margin-left">
-                <strong>Proyecto personal Claudio - Personal Project</strong>
+                <strong><span class="lang-es">Proyecto personal Claudio</span><span class="lang-en">Claudio Personal Project</span></strong>
               </p>
               <br />
               <p>
@@ -279,15 +287,15 @@
           <br />
 
           <div id="prod">
-            <h2 align="center" id="produccion">Producción</h2>
+            <h2 align="center" id="produccion"><span class="lang-es">Producción</span><span class="lang-en">Production</span></h2>
             <br />
             <p class="desc" align="margin-left">
-              <strong>Proyecto personal Claudio - Personal Project</strong>
+              <strong><span class="lang-es">Proyecto personal Claudio</span><span class="lang-en">Claudio Personal Project</span></strong>
             </p>
             <br />
             <p>
               <a
-                href="https://fidbak.audio/claudiorowe/player/5327e886ecfc3ddc4c99f9a9"
+                href="https://fidbak.audio/claudiorowe/player/5327e886ecfc3ddc4c99f9a9/fd8ee1"
                 title="Proyecto personal"
                 >+ fidbak.audio</a
               >
@@ -297,28 +305,37 @@
             <br />
             <p>
               <a
-                href="https://fidbak.audio/claudiorowe/player/93908a2756d2970aa867d7b6"
+                href="https://fidbak.audio/claudiorowe/player/93908a2756d2970aa867d7b6/4887b6"
                 title="Kaizen"
                 >+ fidbak.audio</a
               >
             </p>
             <br />
-            <p class="desc" align="margin-left"><strong>Sin Excusa</strong></p>
+            <p class="desc" align="margin-left"><strong>Indeseable Descenso</strong></p>
             <br />
             <p>
               <a
-                href="https://fidbak.audio/claudiorowe/player/8b3bc9a92d55a9f9b8e2bcba"
-                title="Sin Excusa"
+                href="https://fidbak.audio/claudiorowe/player/85560c491344/f831f01ff826"
+                title="Indeseable Descenso"
                 >+ fidbak.audio</a
               >
             </p>
-            <br /><br />
+            <br />
+                        <p class="desc" align="margin-left"><strong>Producción e instrumentación</strong></p>
+            <br />
+            <p>
+              <a
+                href="https://fidbak.audio/claudiorowe/player/1b2fb6619b73e83a6670876a/2c9478"
+                title="Producción e instrumentación"
+                >+ fidbak.audio</a
+              >
+            </p>
+            <br />
           </div>
 
           <div id="section4">
             <cite
-              >Visitar links para oír mi trabajo - Enter links to hear my
-              work</cite
+              ><span class="lang-es">Visitar links para oír mi trabajo</span><span class="lang-en">Visit links to hear my work</span></cite
             >
           </div>
           <br />
@@ -329,20 +346,21 @@
       <div id="footer">
 
         <div id="serv">
-          <h1 id="servicios">Servicios</h1>
-          <h3 id="services">Services</h3>
-          <h2>Guitarrista</h2>
-          <h4>Guitarist</h4>
-          <p>Guitarrista de sesión. Contáctame para acordar un trato.</p>
-          <p>Session guitarist. Contact me to arrange a deal.</p>
-          <h2>Productor</h2>
-          <h4>Producer</h4>
-          <p>Realizo mezcla y master.</p>
+          <h1 id="servicios" class="lang-es">Servicios</h1>
+          <h1 class="lang-en">Services</h1>
+          <h2 class="lang-es">Guitarrista</h2>
+          <h2 class="lang-en">Guitarist</h2>
+          <p class="lang-es">Guitarrista de sesión. Contáctame para acordar un trato.</p>
+          <p class="lang-en">Session guitarist. Contact me to arrange a deal.</p>
+          <h2 class="lang-es">Productor</h2>
+          <h2 class="lang-en">Producer</h2>
+          <p class="lang-es">Realizo mezcla y master.</p>
+          <p class="lang-en">I provide mixing and mastering services.</p>
         </div>
 
         <div id="cont">
-          <h4 id="contacto">Contacto</h4>
-          <h4>Contact</h4>
+          <h4 id="contacto" class="lang-es">Contacto</h4>
+          <h4 class="lang-en">Contact</h4>
           <ul>
             <li>Concepción, Chile</li>
             <li>
@@ -354,8 +372,9 @@
         </div>
 
         <div class="analytics-notice">
-            <span>📊 Analytics activos para entender mi audiencia</span>
-            <a href="./privacy.html">Política de Privacidad</a>
+          <span class="lang-es">📊 Analytics activos para entender mi audiencia</span>
+          <span class="lang-en">📊 Analytics enabled to understand my audience</span>
+          <a href="./privacy.html"><span class="lang-es">Política de Privacidad</span><span class="lang-en">Privacy Policy</span></a>
         </div>
 
         <!-- <div id="section 7 ">
@@ -370,8 +389,8 @@
     <div id="container-credito">
       <hr />
       <br />
-      <p id="credito"><em>Página creada por Claudio.</em></p>
-      <p id="credit"><em>Page created by Claudio.</em></p>
+      <p id="credito" class="lang-es"><em>Página creada por Claudio.</em></p>
+      <p id="credit" class="lang-en"><em>Page created by Claudio.</em></p>
       <br />
     </div>
 

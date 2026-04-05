@@ -2,6 +2,14 @@ head {
     font-family: Verdana, Geneva, sans-serif;
 }
 
+html[data-lang="es"] .lang-en {
+    display: none !important;
+}
+
+html[data-lang="en"] .lang-es {
+    display: none !important;
+}
+
 body {
     background-image: url("../img/cielo4.jpg");
     background-repeat: no-repeat;
