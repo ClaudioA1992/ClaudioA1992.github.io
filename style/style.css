@@ -31,6 +31,7 @@ p {
 
 #titulo {
     padding: 0;
+    text-align: center;
 }
 
 #logo {
@@ -43,7 +44,7 @@ p {
     transform-origin: center;
     font-size: 100px;
     color: rgb(0, 183, 255);
-    padding-right: 10.5vw;
+    padding-right: 0;
     text-indent: none;
     text-align: center;
 }
@@ -53,13 +54,13 @@ p {
 }
 
 div {
-    padding: 1vw;
+    padding: 0.5vw;
     background-color: white;
 }
 
 #quiensoy {
     text-indent: 1.5em;
-    padding: 10px;
+    padding: 0 30px;
     letter-spacing: 0.1em;
     text-align: justify;
 }
@@ -73,7 +74,16 @@ div {
 }
 
 #container {
-    background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0)), url(../img/lava2.jpg);
+    background:
+        radial-gradient(circle at 50% 52%, rgba(255, 205, 120, 0.45) 0%, rgba(255, 130, 40, 0.24) 28%, rgba(170, 38, 0, 0.18) 52%, rgba(90, 12, 0, 0) 70%),
+        radial-gradient(circle at 22% 74%, rgba(255, 120, 35, 0.22) 0%, rgba(255, 120, 35, 0) 42%),
+        radial-gradient(circle at 78% 74%, rgba(255, 95, 20, 0.22) 0%, rgba(255, 95, 20, 0) 44%),
+        linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, .0)),
+        url(../img/lava2.jpg);
+}
+
+#port {
+    background-color: transparent;
 }
 
 a {
